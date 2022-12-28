@@ -501,6 +501,7 @@ position: relative;
 background: #fff;
 transform: scale(1);
 transition:transform 250ms linear;
+color:#212121;
 
 }
 .overlay.is-hidden .modal {
@@ -628,4 +629,20 @@ margin-left:0px;
   position:absolute;
 bottom:43px;
   right:-60%;
+}
+.modal-title{
+font-style: Bold;
+font-weight:700;
+font-size: 20px;
+line-height: 1,15;
+letter-spacing:3%;
+
+text-align: center;
+margin-top:40px;
+margin-right:40px;
+margin-left:40px;
+}
+.modal-name{
+  display:flex;
+  display:block;
 }
