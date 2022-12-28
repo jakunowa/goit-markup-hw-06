@@ -452,19 +452,41 @@
         </div>
     
         <div class="overlay is-hidden" data-modal>
-          <div class="modal ">
-            <p class="modal-title"> Zostaw swoje dane w formularzu poniżej</p>
+          <div class="modal">
+          <p class="modal-title"> Zostaw swoje dane w formularzu poniżej</p>
             <form>
-              <div class="modal-name">
-              <label> Imię</label>
-              <input type="name" name="name">
+              <div class="field">
+              <label for="name"> Imię</label><svg  width="18px" height="18px">
+                <use  href="./images/icons.svg#icon-person-black-18dp-1
+                "></use></svg>
+              <input type="name" name="name" id="name"/>
               </div>
-              <div>
-                <label> Imię<input type="name" name="name"></label>
-                </div>
-                <div>
-                  <label> Imię<input type="name" name="name"></label>
-                  </div>s
+
+              <div class="field">
+                <label for="phone"> Telefon</label><svg  width="18px" height="18px">
+                  <use  href="./images/icons.svg#icon-phone-black-18dp-1
+                  "></use></svg>
+                <input type="phone" name="phone" id="phone"/>
+              
+              </div>
+
+                <div class="field">
+              <label for="email"> Email</label><svg  width="18px" height="18px">
+                <use  href="./images/icons.svg#icon-email-black-18dp-1
+                "></use></svg>
+              <input type="email" name="email" id="email"/>
+              </div>
+            
+                
+                <div class="field">
+                  <label for="comment"> Komentarz</label>
+                  <textarea type="comment" name="comment" id="comment"rows='5' placeholder="Wprowadź tekst"></textarea>
+
+                  </div>
+                  <div class="field-comment">
+
+                    <label> <input type="checkbox" name="check "/>Oświadczam iż akceptuję <span class="span-comment">Regulamin</span> i <span class="span-comment">Politykę Prywatności.</span></label>
+              </div>
             </form>
             <button type="button" class="close-btn" data-modal-close>X</button>
           </div>
