@@ -361,7 +361,7 @@ margin:0;
 }
 .div-secondary{
 margin-left:80px;
-margin-right:88px;
+margin-right:100px;
 }
 .figure-portfolio{transition:box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 position:relative;
@@ -572,7 +572,7 @@ position:relative;
 .div-button-footer{
 position:absolute;
 bottom:43px;
-right:-64%;
+right:-62%;
 display:flex;
 }
 .modal-title{
@@ -609,7 +609,14 @@ outline: none;
 .field textarea{
 padding:12px 16px;
 margin-bottom :20px;
-}
+border-radius:4px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+outline:none;}
+
+.field textarea:hover,
+.field textarea:focus{border-color:var(--highlight-color);
+transition:border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
 .field label{
 margin-left:0;
 font-family: "Roboto";
@@ -688,5 +695,13 @@ color:var(--logo-color);
 border:none;
 border-radius:4px;
 padding:10px 76px;
-margin-left:164px;
-margin-top:30px;}
+margin:0 auto;
+display:block;
+margin-top:30px;
+font-family: 'Roboto';
+font-weight: 700;
+font-size: 16px;
+line-height: 1,875;
+letter-spacing: 0.06em;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
