@@ -723,6 +723,7 @@ margin-left:54px;
 .field-checkbox svg{
   position:absolute;
   opacity: 0;
+  
 }
-.field-checkbox input :checked + svg {
+.field-checkbox input[type='checkbox']:checked + svg {
   opacity: 1;}
