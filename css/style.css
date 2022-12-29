@@ -686,14 +686,14 @@ margin-left:12px;
 margin-top:11px;
  
 }
-.field:focus  input ,
-.field:hover  input{
-  border: 1px solid var(--highlight-color);
-  transform:border;
-   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.field input:focus ,
+.field input:hover{
+  border-color: var(--highlight-color);
 
-  .field:focus  svg ,
-  .field:hover  svg{
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+  .field svg:focus ,
+  .field:hover svg{
     fill:var(--highlight-color);
   
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
