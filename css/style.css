@@ -383,7 +383,6 @@ padding-bottom:30px;
 padding-top:16px;
 }
 
-
 .icon-svg:focus{ 
 fill:#ffffff;}
 .a-team:hover svg{ 
@@ -395,12 +394,15 @@ display:flex;
 justify-content: center;
 align-items: center;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+outline:none;
 }
 .a-team:hover, .a-team:focus{
 background-color:var(--highlight-color);
 border-radius:50%;
 }
-
+.a-team:focus svg{
+  fill:var(--logo-color);
+}
 .a-footer{
 padding:12px;
 border-radius: 50%;
@@ -408,7 +410,8 @@ background-color: rgba(255, 255, 255, 0.1);
 display:flex;
 justify-content: center;
 align-items: center;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+outline:none;}
 
 .a-footer:hover,
 .a-footer:focus{
@@ -451,9 +454,6 @@ background: #fff;
 transform: scale(1);
 transition:transform 250ms linear;
 color:var(--body-color);
-
-
-
 }
 .overlay.is-hidden .modal {
 
@@ -634,7 +634,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 border-color: var(--highlight-color);
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.field input:focus svg{
+.field input:focus + svg{
 fill:var(--highlight-color);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
