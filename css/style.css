@@ -386,7 +386,7 @@ fill:var(--highlight-color);}
 }
 .container-footer{
   display: flex;
-  a
+  
  
 }
 
@@ -502,6 +502,8 @@ background: #fff;
 transform: scale(1);
 transition:transform 250ms linear;
 color:var(--body-color);
+
+
 
 }
 .overlay.is-hidden .modal {
@@ -631,25 +633,25 @@ bottom:43px;
   right:-60%;
 }
 .modal-title{
+  font-family: "Roboto";
 font-style: Bold;
 font-weight:700;
 font-size: 20px;
 line-height: 1,15;
 letter-spacing:3%;
-
+margin-top:0 auto;
 text-align: center;
 margin-top:40px;
-margin-right:40px;
-margin-left:40px;
 margin-bottom:12px;
 
 }
 .field{
-  margin-left:40px;
-  margin-right:40px;
+
   margin-bottom:10px;
   display: flex;
   flex-direction:column;
+  margin-right:40px;
+  margin-left:40px;
   
 
 }
@@ -669,6 +671,7 @@ margin-bottom:12px;
 }
 .field label{
 margin-left:0;
+font-family: "Roboto";
 font-size:12px;
 line-height: 1,16;
 letter-spacing: 1%;
@@ -683,27 +686,43 @@ margin-left:12px;
 margin-top:11px;
  
 }
-.field-comment{
-  margin-left:54px;
-}
 
-.field-comment label{
+
+.field-checkbox{
+font-family: "Roboto";
 font-weight: 400;
 font-size: 14px;
 line-height: 1,71;
 letter-spacing: 0.03em;
 color:var(--p-main-color);
-margin-left:7px;
+margin-left:54px;
+  position:relative;
+  display: flex;
+  align-items: center;
+
+
 }
   
-.span-comment{
+.span-checkbox{
   color:var(--highlight-color);
   text-decoration: underline;
+  margin:3px;
+  
 }
-.field-comment input[type='checkbox']{
+.field-checkbox input[type='checkbox']{
   appearance: none;
   border: 2px solid #212121;
   border-radius:2px;
   width:16px;
   height:15px;
+  margin:0;
+  background:#fff;
+  margin-right:8px;
+  
 }
+.field-checkbox svg{
+  position:absolute;
+  opacity: 0;
+}
+.field-checkbox input :checked + svg {
+  opacity: 1;}
